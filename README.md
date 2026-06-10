@@ -24,7 +24,7 @@ pip install pyfiglet
 ## Usage
 1. Clone or download this repository.
 ```bash
-git clone https://github.com/d3vda5/port-scanner.git
+git clone https://github.com/bali-36/port-scanner.git
 ```
 2. Open a terminal and navigate to the folder containing `Port_Scanner.py`.
 ```bash
