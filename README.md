@@ -1,11 +1,11 @@
 # Port Scanner
 
-A simple yet effective command-line-based Port Scanner built in Python. This tool allows users to scan a target host to identify open ports in the range of 0–1023. The script is beginner-friendly and demonstrates fundamental concepts of network programming and socket communication in Python.
+A simple yet effective command-line-based Port Scanner built in Python. This tool allows users to scan a target host to identify open ports in the range of 0–65535. The script is beginner-friendly and demonstrates fundamental concepts of network programming and socket communication in Python.
 
 ## Features
 
 - **User-Friendly Interface:** Displays a banner using the `pyfiglet` library.
-- **Target Scanning:** Accepts a target IP address and scans ports from 0 to 1023.
+- **Target Scanning:** Accepts a target IP address and scans ports from 0 to 65535.
 - **Real-Time Updates:** Shows scanning progress and lists open ports in real-time.
 - **Error Handling:** Handles exceptions gracefully for scenarios like invalid IP, hostname resolution issues, or user interruptions.
 - **Timestamp Tracking:** Logs the start and end time of the scanning process for time tracking.
@@ -60,7 +60,7 @@ Total Scanning time: 15 seconds
 
 1. The script accepts a target IP address as a command-line argument.
 2. Resolves the hostname to ensure it's valid.
-3. Iterates through ports 0–1023, attempting to establish a connection using the `socket` library.
+3. Iterates through ports 0–65535, attempting to establish a connection using the `socket` library.
 4. If a connection is successful, the port is marked as open.
 5. Displays the open ports and the total scanning time at the end.
 ## Error Handling
@@ -69,7 +69,6 @@ Total Scanning time: 15 seconds
 3. **Socket Error**: Informs if the server is unresponsive.
 4. **Keyboard Interrupt**: Safely exits the program if interrupted by the user.
 ## Notes
-* The script currently scans only well-known ports (0–1023). For a broader scan, adjust the `range()` function in the code.
 * This scanner is meant for educational and authorized use only. Unauthorized scanning of systems is illegal and unethical.
 ## Future Improvements
 * Add support for custom port ranges.
